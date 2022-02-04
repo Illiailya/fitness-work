@@ -1,0 +1,136 @@
+.testimonials {
+	&__title {
+		text-align: center;
+	}
+
+	&__subttile {
+		margin: 0 auto;
+		max-width: 750px;
+		width: 100%;
+		margin-bottom: 65px;
+	}
+
+	&__slide {
+		min-height: 675px;
+		background-repeat: no-repeat;
+		background-position: right 58px center;
+		background-image: url('../images/sevice/my-guy.png');
+	}
+
+	&__content {
+		max-width: 508px;
+		width: 100%;
+	}
+
+	&__heading {
+		font-size: 34px;
+		margin-bottom: 20px;
+		color: $colorTitle;
+		opacity: 0.88;
+	}
+
+	&__text {
+		margin-bottom: 60px;
+	}
+
+	&__stars {
+		margin-bottom: 40px;
+	}
+
+	&__author {
+		display: block;
+		font-weight: 700;
+		margin-bottom: 5px;
+		color: $colorTitle;
+		opacity: 0.88;
+	}
+
+	&__proff {
+		display: block;
+		color: #B8B8B8;
+	}
+
+	.slick-dots {
+		display: flex;
+		position: absolute;
+		bottom: 26px;
+		left: 0;
+
+		li {
+			&:not(:last-child) {
+				margin-right: 5px;
+			}
+		}
+
+		button {
+			font-size: 0;
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			background-color: #EEF7FB;
+			transition: all $duration ease;
+		}
+	}
+
+	.slick-active button {
+		background-color: #000;
+	}
+}
+
+@media (max-width: 992px) {
+	.testimonials {
+		&__subttile {
+			margin-bottom: 40px;
+		}
+
+		&__content {
+			max-width: 400px;
+		}
+
+		&__slide {
+			min-height: 600px;
+			background-position: right top;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.testimonials {
+		&__subttile {
+			margin-bottom: 30px;
+		}
+
+		&__slide {
+			min-height: 500px;
+		}
+
+		&__content {
+			max-width: 100%;
+			background-color: rgb(255, 255, 255, 0.6);
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.testimonials {
+		&__container {
+			padding: 0;
+		}
+
+		&__content {
+			padding: 10px 15px;
+		}
+
+		&__text {
+			margin-bottom: 20px;
+		}
+
+		&__stars {
+			margin-bottom: 10px;
+		}
+
+		.slick-dots {
+			left: 15px;
+		}
+	}
+}

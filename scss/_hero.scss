@@ -1,0 +1,185 @@
+.hero {
+	background: url('../images/hero-bg.png') top right 10% / contain no-repeat;
+
+	@media (max-width: 1600px) {
+		background: url('../images/hero-bg.png') top right / cover no-repeat;
+	}
+
+	&__inner {
+		display: flex;
+		padding-top: 118px;
+		min-height: 100vh;
+	}
+
+	&__content {
+		margin-top: auto;
+		margin-bottom: auto;
+		flex: 0 0 50%;
+		padding-bottom: 20px;
+	}
+
+	&__title {
+		display: inline-block;
+		font-weight: 900;
+		font-size: 100px;
+		color: $colorTitle;
+		margin-bottom: 18px;
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: 34px;
+			left: 0;
+			width: 90px;
+			height: 96px;
+			background: url('../images/icon-&.svg') center / contain no-repeat;
+			z-index: 0;
+		}
+	}
+
+	&__title-top {
+		display: block;
+		padding-right: 70px;
+		position: relative;
+		z-index: 1;
+	}
+
+	&__title-bottom {
+		margin-top: -40px;
+		padding-left: 70px;
+		position: relative;
+		z-index: 1;
+		display: block;
+
+	}
+
+	&__subtitle {
+		font-size: 20px;
+		font-weight: 700;
+		margin-bottom: 31px;
+	}
+
+	&__text {
+		margin-bottom: 66px;
+	}
+
+	&__form {
+		max-width: 517px;
+		width: 100%;
+		height: 58px;
+		display: flex;
+	}
+
+	&__input {
+		flex: 1 1 auto;
+		border: 1px solid #000000;
+		border-radius: 5px 0 0 5px;
+		border-right: 1px solid transparent;
+		padding: 17px 17px 19px 17px;
+		font-size: 20px;
+
+		&::placeholder {
+			font-size: $fzLink;
+			color: #000;
+			opacity: 0.2;
+		}
+
+		&:focus {
+			box-shadow: 0 0 3px 1px $colorTitle;
+
+			&::placeholder {
+				opacity: 0;
+			}
+		}
+	}
+
+	&__btn {
+		padding: 17px 54px 19px 53px;
+		background-color: $colorTitle;
+		color: #fff;
+		font-size: $fzLink;
+		border-radius: 0 5px 5px 0;
+		border: 1px solid $colorTitle;
+		box-shadow: 0px 100px 80px rgba(49, 49, 49, 0.1), 0px 64.8148px 46.8519px rgba(49, 49, 49, 0.0759259), 0px 38.5185px 25.4815px rgba(49, 49, 49, 0.0607407), 0px 20px 13px rgba(49, 49, 49, 0.05), 0px 8.14815px 6.51852px rgba(49, 49, 49, 0.0392593), 0px 1.85185px 3.14815px rgba(49, 49, 49, 0.0240741);
+		transition: all $duration ease;
+
+		&:hover,
+		&:focus {
+			background-color: #fff;
+			color: $colorTitle;
+		}
+
+		&:active {
+			box-shadow: inset 0 0 25px 1px $colorTitle;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.hero {
+		background: url('../images/hero-bg.png') top right -160px / cover no-repeat;
+
+		&__content {
+
+			flex: 0 0 100%;
+			background-color: rgba(255, 255, 255, 0.5);
+		}
+
+		&__btn {
+			padding: 17px 27px 19px 27px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.hero {
+		&__title {
+			font-size: 70px;
+
+			&::before {
+				width: 50px;
+				height: 60px;
+				bottom: 20px;
+			}
+		}
+
+		&__title-bottom {
+			padding-left: 47px;
+		}
+
+		&__inner {
+			padding-top: 50px;
+		}
+
+		&__form {
+			max-width: 100%;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.hero {
+		&__subtitle {
+			margin-bottom: 23px;
+		}
+
+		&__text {
+			margin-bottom: 30px;
+		}
+
+		&__form {
+			flex-direction: column;
+			gap: 10px;
+		}
+
+		&__input {
+			border: 1px solid $colorTitle;
+		}
+
+		&__input,
+		&__btn {
+			border-radius: 6px;
+		}
+	}
+}

@@ -1,0 +1,49 @@
+@font-face {
+	font-family: 'CircularStd';
+	font-weight: 400;
+	font-style: normal;
+	src: 
+		url('../fonts/CircularStd-Book.woff2') format('woff2'),
+		url('../fonts/CircularStd-Book.woff') format('woff');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'CircularStd';
+	font-weight: 500;
+	font-style: normal;
+	src: 
+		url('../fonts/CircularStd-Medium.woff2') format('woff2'),
+		url('../fonts/CircularStd-Medium.woff') format('woff');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'CircularStd';
+	font-weight: 700;
+	font-style: normal;
+	src: 
+		url('../fonts/CircularStd-Bold.woff2') format('woff2'),
+		url('../fonts/CircularStd-Bold.woff') format('woff');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'CircularStd';
+	font-weight: 900;
+	font-style: normal;
+	src: 
+		url('../fonts/CircularStd-Black.woff2') format('woff2'),
+		url('../fonts/CircularStd-Black.woff') format('woff');
+	font-display: swap;
+}
+
+// 100: Thin;
+// 200: Extra Light (Ultra Light);
+// 300: Light;
+// 400: Normal;
+// 500: Medium;
+// 600: Semi Bold (Demi Bold);
+// 700: Bold;
+// 800: Extra Bold (Ultra Bold);
+// 900: Black (Heavy).
